@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&famsily=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--body-background-color);
+}
+nav{
+    font-family: var(--font-family-first);
+}
+nav ul.nav-list{
+    height: 65px;
+    background-color: #000;
+    list-style-type: none;
+}
+nav ul.nav-list li {
+    padding: 0px 10px;
+}
+nav .brand{
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+nav .brand img{
+    max-width: 44px;
+    padding: 0px 5px;
+}
+nav .nav-list a{
+    color: #fff;
+}
+
+/* Container  */
+.container {
+    min-height: 75vh;
+    background-color: var(--bg-color);
+    background: url('bg.jpg') center center;
+    background-size: cover;
+    color: var(--bg-content-color);
+    font-family: var(--font-family-second);
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+/* Songs list  */ 
+
+.song-list {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.song-list h1{
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+}
+.song-item {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+    margin: 0px 0px 15px;
+}
+.song-item img{
+    max-width: 45px;
+    margin: 5px 10px;
+    border-radius: 50%;
+}
+.song-item .time-stamp{
+    margin: 0px 10px;
+}
+
+
+/* bottom progress bar  */
+
+.bottom-progress-wrap{
+    position: sticky;
+    bottom: 0;
+    background-color: var(--bg-color);
+    color: var(--bg-content-color);
+    padding-top: 20px;
+    padding-bottom: 32px;
+}
+input#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+.bottom-progress-wrap .icons {
+    margin-top: 15px;
+}
+.bottom-progress-wrap .icons i{
+    cursor: pointer;
+} 
+.song-info{
+    position: absolute;
+    left: 10vw;
+    font-family: var(--font-family-second);
+}
+.song-info img{
+    max-width: 40px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}

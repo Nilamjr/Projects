@@ -1,0 +1,35 @@
+:root {
+    --body-background-color: antiquewhite;
+    --bg-color: #000;
+    --bg-content-color: #fff;
+    --font-family-first: 'Ubuntu', sans-serif;
+    --font-family-second: 'Varela Round', sans-serif;
+}
+
+.d-flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.f-wrap{
+    flex-wrap: wrap;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+i{
+    cursor: pointer;
+}
