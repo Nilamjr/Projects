@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background: rgba(240, 239, 243);
+    }
+    .wrapper{
+        max-width: 375px;
+        width: 100%;
+        margin: 50px auto;
+        background: #fff;
+        height: 520px;
+        border-radius: 15px;
+        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
+        padding: 20px 20px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .wrapper::-webkit-scrollbar{
+        display: none;
+    }
+    .input-wrap {
+        width: 100%;
+    }           
+    form{
+        width: 100%;
+        border: 1px solid rgb(82, 74, 235);
+    }
+    .input-wrap input{
+        border: none;
+        width: 100%;
+        padding: 12px 10px;
+        outline: none;
+        font-size: 20px;
+    }
+    .product {
+        margin-bottom: 20px;
+    }   
+
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="input-wrap">
+                <form>
+                    <input type=""  id="search-item" placeholder="Search Product" onkeyup="searchProduct()"/>
+                </form>
+            </div>
+            <div class="product-wrap">
+                <div class="products-list" id="products-list">
+                    
+                    <div class="product" id="1">
+                        <img class="product-img" alt=""/>
+                        <div class="details">
+                            <h2 class="product-name">
+                                 T-shirts For Everyone
+                            </h2>
+                            <h3 class="price">
+                                $25
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product" id="2">
+                        <img class="product-img" alt=""/>
+                        <div class="details">
+                            <h2 class="product-name">
+                                 Smart Watch
+                            </h2>
+                            <h3 class="price">
+                                $25
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product" id="3">
+                        <img class="product-img" alt=""/>
+                        <div class="details">
+                            <h2 class="product-name">
+                                 Puma Roma Bag
+                            </h2>
+                            <h3 class="price">
+                                $25
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product" id="4">
+                        <img class="product-img" alt=""/>
+                        <div class="details">
+                            <h2 class="product-name">
+                                Hoodie for Everybody
+                            </h2>
+                            <h3 class="price">
+                                $25
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product" id="5">
+                        <img class="product-img" alt=""/>
+                        <div class="details">
+                            <h2 class="product-name">
+                                Grand Court Sneaker
+                            </h2>
+                            <h3 class="price">
+                                $25
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product" id="6">
+                        <img class="product-img" alt=""/>
+                        <div class="details">
+                            <h2 class="product-name">
+                                 Fenta Fashion Hoodie
+                            </h2>
+                            <h3 class="price">
+                                $25
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product" id="7">
+                        <img class="product-img" alt=""/>
+                        <div class="details">
+                            <h2 class="product-name">
+                                 Bag for roadtrip
+                            </h2>
+                            <h3 class="price">
+                                $25
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product" id="8">
+                        <img class="product-img" alt=""/>
+                        <div class="details">
+                            <h2 class="product-name">
+                                 Men's crew Tshirt
+                            </h2>
+                            <h3 class="price">
+                                $25
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product" id="9">
+                        <img class="product-img" alt=""/>
+                        <div class="details">
+                            <h2 class="product-name">
+                                 Fashionable Bags
+                            </h2>
+                            <h3 class="price">
+                                $25
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product" id="10">
+                        <img class="product-img" alt=""/>
+                        <div class="details">
+                            <h2 class="product-name">
+                                 Hoodie Fashion
+                            </h2>
+                            <h3 class="price">
+                                $25
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="product" id="11">
+                        <img class="product-img" alt=""/>
+                        <div class="details">
+                            <h2 class="product-name">
+                                 Adidas sneakera
+                            </h2>
+                            <h3 class="price">
+                                $25
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>      
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
